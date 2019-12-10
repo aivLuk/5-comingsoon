@@ -142,13 +142,29 @@ footer {
         width: 1000px;
         margin-left: calc( (100% - 1000px) / 2 );
         margin-right: calc( (100% - 1000px) / 2 );
+        position: relative;
     }
+        footer > .row > .btn.fa {
+            position: absolute;
+            top: -30px;
+            right: -18px;
+        }
         footer > .row > .socials {
             display: inline-block;
             width: 100%;
+            padding: 20px;
             margin-bottom: 20px;
             border-bottom: 2px solid #fff;
         }
+            footer > .row > .socials > a {
+                display: inline-block;
+                width: 40px;
+                margin: 5px;
+                line-height: 40px;
+                font-size: 25px;
+                color: #fff;
+                text-decoration: none;
+            }
         footer > .row > .footer-content {
             display: inline-block;
             width: 600px;
@@ -190,6 +206,9 @@ footer {
         width: 600px;
         margin-left: calc( (100% - 600px) / 2 );
         margin-right: calc( (100% - 600px) / 2 );
+    }
+    footer > .row > .btn.fa {
+        display: none;
     }
 }
 @media (max-width: 700px) {
